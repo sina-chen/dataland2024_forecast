@@ -5,7 +5,7 @@ This Repo contains code and results for forecasting the 2024 election in Datalan
 
 $$p_{ki} {\sim N(\pi_{ki}^{'}, \sigma_{ki}^{2})},$$
 
-$$\pi_{ki}^' = {\frac{\pi_{ki}}{\sum_{k=1}^K \pi_{ki}}}$$,
+$$\pi_{ki}^{'} = {\frac{\pi_{ki}}{\sum_{k=1}^K \pi_{ki}}}$$,
 
 $$p_{ki} {= log(\theta_{r[i],t[i],k}^') + \alpha_{1r[i]k}},$$
 $$\theta_{r[i],t[i],k[i]}^' {= \frac{\theta_{r[i],t[i],k[i]}}{\sum_{k=1}^K \theta_{r[i],t[i],k[i]}}},$$
