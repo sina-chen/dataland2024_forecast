@@ -1,5 +1,5 @@
 # Dataland 2024 forecast
-This Repo contains code and results for forecasting the 2024 election in Dataland for scenario A to F. To do so R version 4.3.1 and rStan version XXX is used.
+This Repo contains code and results for forecasting the 2024 election in Dataland for scenario A to F. To do so R version 4.3.1 and rStan version 2.26.22 is used.
 
 ## Model
 
