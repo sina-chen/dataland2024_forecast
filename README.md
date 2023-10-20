@@ -3,7 +3,7 @@ This Repo contains code and results for forecasting the 2024 election in Datalan
 
 ## Model specifies
 
-$$p_{ki} \sim N(\pi_{ki}^', sigma_{ki}^2),$$
+$$p_{ki} \sim N(\pi_{ki}^{'}, sigma_{ki}^{2}),$$
 
 $$\pi_{ki}^' = \frac{\pi_{ki}}{\sum_{k=1}^K \pi_{ki}},$$
 
