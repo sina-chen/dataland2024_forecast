@@ -1,17 +1,20 @@
 # Dataland 2024 forecast
 This Repo contains code and results for forecasting the 2024 election in Dataland for scenario A to F.
 
-## Model specifies
+## Model
 
 $$p_{ki} {\sim N(\pi_{ki}^{'}, \sigma_{ki}^{2})},$$
 
-$$\pi_{ki}^{'} = {\pi_{ki}/\sum_{k=1}^{K} \pi_{ki}}$$,
+$$\pi_{ki}^{'} = {\pi_{ki}/\sum_{k=1}^{K} \pi_{ki}},$$
 
-$$p_{ki} = { log(\theta_{r[i],t[i],k}^{'}) + \alpha_{1r[i]k}}$$,
+$$p_{ki} = {log(\theta_{r[i],t[i],k}^{'}) + \alpha_{1r[i]k}},$$
 
-$$\theta_{r[i],t[i],k[i]}^{'} = {\theta_{r[i],t[i],k[i]}/\sum_{k=1}^{K} \theta_{r[i],t[i],k[i]}}$$,
+$$\theta_{r[i],t[i],k}^{'} = {\theta_{r[i],t[i],k}/\sum_{k=1}^{K} \theta_{r[i],t[i],k}},$$
 
-$$log(\theta_{r[i],t[i]}) {\sim N_{K}(log(\theta_{r[i],t[i]-1}),\Sigma_{\theta})}$$.
+$$log(\theta_{r[i],t[i]}) {\sim N_{K}(log(\theta_{r[i],t[i]-1}),\Sigma_{\theta})}.$$
+
+Of iterest here is $\tehta_{r[i],t[i],k}^{'}$, which is the the mean expected vote share for party $k$, on day $t$, in election $r$, with $i$ identifying the poll. A softmax transfornation is applied, to ensure that the mean expected vote shares sum to 1 across all $K$ parties. The untransformed mean expected vote shares follow
+a random walk, with the K length vector of starting values $\theta_{r[i], 0}$ corresponding to the log of the previous election results. 
 
 ## Notes
 
