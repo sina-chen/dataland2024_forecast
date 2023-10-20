@@ -7,11 +7,11 @@ $$p_{ki} {\sim N(\pi_{ki}^{'}, \sigma_{ki}^{2})},$$
 
 $$\pi_{ki}^{'} = {\pi_{ki}/\sum_{k=1}^{K} \pi_{ki}}$$,
 
-$$p_{ki} = { log(\theta_{r[i],t[i],k}^') + \alpha_{1r[i]k}}$$,
+$$p_{ki} = { log(\theta_{r[i],t[i],k}^{'}) + \alpha_{1r[i]k}}$$,
 
 $$\theta_{r[i],t[i],k[i]}^{'} = {\theta_{r[i],t[i],k[i]}/\sum_{k=1}^{K} \theta_{r[i],t[i],k[i]}}$$,
 
-$$log(\theta_{r[i],t[i]}) {\sim N_K(log(\theta_{r[i],t[i]-1,\Sigma_{\theta})}$$.
+$$log(\theta_{r[i],t[i]}) {\sim N_{K}(log(\theta_{r[i],t[i]-1,\Sigma_{\theta})}$$.
 
 ## Notes
 
