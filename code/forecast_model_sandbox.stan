@@ -26,7 +26,7 @@ data {
 
 transformed data {
   
-  // rescale previous election result to logit scale for random walk
+  // rescale previous election result to log scale for random walk
   vector[K] log_prev_vote[R];
   for(r in 1:R) {
     if(st_id[r] == 0) {
