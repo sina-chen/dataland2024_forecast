@@ -7,7 +7,7 @@ $$p_{ki} {\sim N(\pi_{ki}^{'}, \sigma_{ki}^{2})},$$
 
 $$\pi_{ki}^{'} = {\pi_{ki}/\sum_{k=1}^{K} \pi_{ki}},$$
 
-$$\pi_{ki} = {log(\theta_{r[i],t[i],k}^{'}) + \alpha_{1r[i]k}},$$
+$$log(\pi_{ki}) = {log(\theta_{r[i],t[i],k}^{'}) + \alpha_{1r[i]k}},$$
 
 $$\theta_{r[i],t[i],k}^{'} = {\theta_{r[i],t[i],k}/\sum_{k=1}^{K} \theta_{r[i],t[i],k}},$$
 
